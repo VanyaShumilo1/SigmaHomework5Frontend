@@ -1,0 +1,40 @@
+@import 'variables';
+
+.nav {
+  padding-top: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    &_right {
+      gap: 15px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+    &_item {
+      display: flex;
+      color: $blue;
+      gap: 3px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      transition: 0.3s all;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}

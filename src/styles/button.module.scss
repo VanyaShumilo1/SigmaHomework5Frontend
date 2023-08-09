@@ -1,0 +1,22 @@
+@import 'variables';
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 28px 40px;
+  background: $yellow;
+  border-radius: 16px;
+  transition: 0.3s all;
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    color: #274C5B;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
