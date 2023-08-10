@@ -1,0 +1,54 @@
+@import 'variables';
+
+.about {
+  padding: 190px 0;
+  margin-top: 190px;
+  background: url(../img/about/bg.png) center center/cover no-repeat;
+  background-color: $light;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__text {
+    max-width: 690px;
+  }
+
+  &__advantages {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_item {
+      display: flex;
+      gap: 20px;
+    }
+
+    &_title {
+      color: $blue;
+      font-family: 'Roboto', sans-serif;
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    &_text {
+      max-width: 444px;
+      line-height: 165.4%;
+    }
+  }
+
+  &__button {
+    margin-top: 46px;
+    background: $blue;
+    color: $white;
+  }
+}
+
+.icon {
+  display: inline-block;
+  padding: 23px;
+  background: $white;
+  border-radius: 20px;
+}
