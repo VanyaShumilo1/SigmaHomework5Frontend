@@ -3,12 +3,17 @@
 .about {
   padding: 190px 0;
   margin-top: 190px;
-  background: url(../img/about/bg.png) center center/cover no-repeat;
+  background: url(../img/about/bg.png) no-repeat;
   background-color: $light;
 
   &__wrapper {
     display: flex;
     justify-content: flex-end;
+  }
+
+  &__img {
+    img {
+    }
   }
 
   &__text {

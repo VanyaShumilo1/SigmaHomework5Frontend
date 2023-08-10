@@ -5,11 +5,14 @@ import Button from "../UI/Button";
 import AboutIcon from "./AboutIcon";
 import OrganicIcon from '../../img/about/organic.svg'
 import QualityIcon from '../../img/about/quality.svg'
+import bg from '../../img/about/image.png'
 
 const About = () => {
     return (
         <div className={styles.about}>
             <Container className={styles.about__wrapper}>
+
+
                 <div>
                     <h3 className="subtitle">About us</h3>
                     <h2 className="title">We Believe in Working<br/>Accredited Farmers</h2>
