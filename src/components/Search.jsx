@@ -7,7 +7,11 @@ const Search = () => {
 
     return (
         <div className={styles.search}>
-            <input type="text"/>
+            <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+            />
             <button className={styles.search__button}>
                 <img src={searchIcon} alt="search"/>
             </button>

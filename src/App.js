@@ -1,6 +1,6 @@
 import Nav from "./components/Nav/Nav";
 import {Route, Routes} from "react-router-dom";
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 
 const App = () => {
     return (
