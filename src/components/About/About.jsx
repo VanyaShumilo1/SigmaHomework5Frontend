@@ -5,25 +5,22 @@ import Button from "../UI/Button";
 import AboutIcon from "./AboutIcon";
 import OrganicIcon from '../../img/about/organic.svg'
 import QualityIcon from '../../img/about/quality.svg'
-import bg from '../../img/about/image.png'
+import Subtitle from "../UI/Subtitle";
+import Title from "../UI/Title";
 
 const About = () => {
     return (
         <div className={styles.about}>
             <Container className={styles.about__wrapper}>
-
-
                 <div>
-                    <h3 className="subtitle">About us</h3>
-                    <h2 className="title">We Believe in Working<br/>Accredited Farmers</h2>
+                    <Subtitle>About us</Subtitle>
+                    <Title>We Believe in Working<br/>Accredited Farmers</Title>
                     <div className={styles.about__text}>
                         Simply dummy text of the printing and typesetting industry. Lorem had ceased to
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                         galley.
                     </div>
-
                     <div className={styles.about__advantages}>
-
                         <div className={styles.about__advantages_item}>
                             <div className={styles.about__advantages_icon}>
                                 <AboutIcon icon={OrganicIcon}/>
@@ -47,8 +44,6 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
                     <Button className={styles.about__button}>Shop Now</Button>
