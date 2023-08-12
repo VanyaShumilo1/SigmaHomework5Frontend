@@ -19,5 +19,30 @@
 
   &:hover {
     transform: scale(1.1);
+    img {
+      animation: move 0.8s;
+    }
+  }
+}
+
+.button_black {
+  background: #1E1E1E;
+}
+
+.button_blue {
+  background: $blue;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

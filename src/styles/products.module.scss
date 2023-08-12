@@ -1,5 +1,9 @@
+@import 'variables';
+
 .products {
   margin-top: 170px;
+  position: relative;
+  padding-bottom: 100px;
 
   .title, .subtitle {
     text-align: center;
@@ -14,5 +18,12 @@
     @media screen and (max-width: 1600px) {
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  .buttonShow {
+    margin: 100px auto 0 auto;
+    color: $white;
+    width: 205px;
+    justify-content: center;
   }
 }

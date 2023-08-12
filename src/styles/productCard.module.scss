@@ -52,23 +52,4 @@
     align-items: center;
     margin-top: 6px;
   }
-
-  &__price {
-    display: flex;
-    gap: 5px;
-    align-items: flex-end;
-    &_actual {
-      color: $blue;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    &_nonActual {
-      color: $nonActualPriceColor;
-      font-size: 15px;
-      font-weight: 600;
-      text-decoration: line-through;
-    }
-  }
-
 }
