@@ -29,14 +29,24 @@ const Products = () => {
     const productsWithDiscount = products.filter(product => product.discount === true)
     const productsWithoutDiscount = products.filter(product => product.discount !== true)
 
-    const handleClick = () => {
+    const handleShowProducts = () => {
         setShowAllProducts(!showAllProducts)
+    }
+
+    const [isOverlayActive, setIsOverlayActive] = useState(false)
+    const [productInOverlay, setProductInOverlay] = useState({})
+
+    const handleShowOverlay = (product) => {
+        setIsOverlayActive(true)
+        setProductInOverlay(product)
     }
 
     return (
         <div className={styles.products}>
 
-            <Overlay product={products[0]}/>
+            {
+                isOverlayActive && <Overlay isOverlayActive={isOverlayActive} setIsOverlayActive={setIsOverlayActive} product={productInOverlay}/>
+            }
 
             <Container>
                 <Subtitle className={styles.subtitle}>Categories</Subtitle>
@@ -52,24 +62,26 @@ const Products = () => {
                                 <>
                                     {
                                         productsWithDiscount.map(product =>
-                                            <ProductCard key={product._id} product={product}/>
+                                            <ProductCard onClick={() => handleShowOverlay(product)} key={product._id}
+                                                         product={product}/>
                                         )
                                     }
                                     {
                                         productsWithoutDiscount.map(product =>
-                                            <ProductCard key={product._id} product={product}/>
+                                            <ProductCard onClick={() => handleShowOverlay(product)} key={product._id}
+                                                         product={product}/>
                                         )
                                     }
-
                                 </>
                                 :
                                 productsWithDiscount.slice(0, 8).map(product =>
-                                    <ProductCard key={product._id} product={product}/>
+                                    <ProductCard onClick={() => handleShowOverlay(product)} key={product._id}
+                                                 product={product}/>
                                 )
                     }
                 </div>
                 <Button
-                    onClick={() => handleClick()}
+                    onClick={() => handleShowProducts()}
                     className={[styles.buttonShow, showAllProducts ? buttonStyles.button_black : buttonStyles.button_blue].join(' ')}>
                     {showAllProducts ? "Hide All" : "Load More"}
                 </Button>

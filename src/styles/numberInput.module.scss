@@ -1,10 +1,14 @@
 @import 'variables';
 
 .numberInput {
-  padding: 28px 40px;
+  padding: 28px 0;
   border-radius: 16px;
   border: 2px solid $blue;
-  display: inline;
-
-
+  display: block;
+  width: 124px;
+  text-align: center;
+  color: $blue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }

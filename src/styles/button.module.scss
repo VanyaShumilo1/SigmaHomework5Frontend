@@ -8,7 +8,7 @@
   background: $yellow;
   border-radius: 16px;
   transition: 0.3s all;
-  color: #274C5B;
+  color: $blue;
 
   &__text {
     font-family: 'Roboto', sans-serif;
@@ -18,7 +18,7 @@
   }
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     img {
       animation: move 0.8s;
     }
@@ -26,11 +26,17 @@
 }
 
 .button_black {
-  background: #1E1E1E;
+  background: $buttonBlack;
 }
 
 .button_blue {
   background: $blue;
+  color: $white;
+}
+
+.button_light {
+  background: $lightGreen;
+  color: $blue;
 }
 
 @keyframes move {
