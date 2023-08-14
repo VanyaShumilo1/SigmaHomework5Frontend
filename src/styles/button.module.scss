@@ -39,6 +39,19 @@
   color: $blue;
 }
 
+.button_itemInCart {
+  img {
+    opacity: 0;
+  }
+
+  padding: 28px 40px 28px 69px;
+  background: green;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
 @keyframes move {
   0% {
     transform: translateX(0);

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Subtitle from "../UI/Subtitle";
 import Title from "../UI/Title";
 import styles from '../../styles/products.module.scss'
@@ -10,6 +10,7 @@ import {useFetching} from "../../hooks/useFetching";
 import Loader from "../UI/Loader";
 import Button from "../UI/Button";
 import Overlay from "./Overlay";
+import {Context} from "../../context";
 
 const Products = () => {
 
@@ -40,6 +41,9 @@ const Products = () => {
         setIsOverlayActive(true)
         setProductInOverlay(product)
     }
+
+    const {cartItems} = useContext(Context)
+    console.log(cartItems)
 
     return (
         <div className={styles.products}>
