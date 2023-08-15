@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import {useState} from "react";
 import {Context} from "./context";
+import CartPage from "./pages/CartPage";
 
 const App = () => {
 
@@ -15,7 +16,8 @@ const App = () => {
         }}>
             <Nav/>
             <Routes>
-                <Route path='/' element={<Home/>}/>
+                <Route path='/' element={<Home />}/>
+                <Route path='/cart' element={<CartPage/>}/>
             </Routes>
         </Context.Provider>
     );

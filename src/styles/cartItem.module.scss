@@ -1,0 +1,47 @@
+@import 'variables';
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    width: 252px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 40px;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: 40px;
+  }
+
+  &__price {
+    font-size: 24px;
+  }
+
+  &__triggers {
+    display: flex;
+    align-items: center;
+
+    &_text {
+      font-size: 32px;
+      margin-right: 20px;
+    }
+  }
+
+  &__input {
+    margin-right: 90px;
+    background: $white;
+  }
+}

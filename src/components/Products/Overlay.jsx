@@ -9,6 +9,7 @@ import ProductPrice from "./ProductPrice";
 import NumberInput from "../UI/NumberInput";
 import Button from "../UI/Button";
 import {Context} from "../../context";
+import CloseButton from "../UI/CloseButton";
 
 const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
 
@@ -29,6 +30,7 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
         cartItems.forEach(item => {
             if (item.product._id === product._id) {
                 setIsItemInCart(true)
+                setQuantity(item.quantity)
             }
         })
     }, [])
@@ -49,9 +51,9 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
             <div className={styles.modal}>
                 <Container>
                     <div className={styles.modal__wrapper}>
-                        <button id='closeBtn' onClick={(event) => handleCloseOverlay(event)}
+                        <CloseButton id='closeBtn' onClick={(event) => handleCloseOverlay(event)}
                                 className={styles.modal__closeBtn}>X
-                        </button>
+                        </CloseButton>
 
                         <div className={styles.modal__img}>
                             <div className={styles.modal__type}>{capitalize(product?.type || "none")}</div>

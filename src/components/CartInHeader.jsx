@@ -10,7 +10,7 @@ const CartInHeader = ({cartCount}) => {
     return (
         <Link to={'/cart'} className={styles.cartInHeader}>
             <div className={styles.cartInHeader__img}>
-                <img src={cartLogo} alt="Cart"/>
+                <img src={cartLogo} alt="CartPage"/>
             </div>
 
             Cart ({cartItems.reduce((prev, cur) => Number(cur.quantity) + prev, 0)})

@@ -1,0 +1,18 @@
+@import 'variables';
+
+.cart {
+  margin-top: 140px;
+  padding: 150px 0 60px 0;
+  background: $peachColor;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
