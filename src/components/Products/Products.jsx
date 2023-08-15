@@ -43,7 +43,6 @@ const Products = () => {
     }
 
     const {cartItems} = useContext(Context)
-    console.log(cartItems)
 
     return (
         <div className={styles.products}>

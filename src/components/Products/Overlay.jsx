@@ -43,8 +43,6 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
         setIsItemInCart(true)
     }
 
-    console.log(isItemInCart)
-
     return (
         <div id='overlay' {...props} className={[styles.overlay, isOverlayActive && styles.showOverlay].join(' ')}
              onClick={(event) => handleCloseOverlay(event)}>

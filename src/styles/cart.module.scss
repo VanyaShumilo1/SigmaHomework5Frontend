@@ -8,11 +8,29 @@
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
   }
 
-  &__total {
+  &__price {
+    margin-top: 50px;
     display: flex;
     justify-content: flex-end;
+
+    &_wrapper {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+
+    }
+    &_item {
+      color: $blue;
+      font-family: 'Roboto', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
   }
 }
