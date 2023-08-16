@@ -4,7 +4,7 @@ import buttonStyles from '../../styles/button.module.scss';
 import Container from "../Container";
 import {capitalize} from "../../utils/capitalize";
 import Title from "../UI/Title";
-import stars from '../../img/products/stars.svg'
+import stars from '../../img/common/stars.svg'
 import ProductPrice from "./ProductPrice";
 import NumberInput from "../UI/NumberInput";
 import Button from "../UI/Button";

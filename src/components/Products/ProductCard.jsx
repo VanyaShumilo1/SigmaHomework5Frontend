@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/productCard.module.scss'
 import {capitalize} from "../../utils/capitalize";
-import stars from '../../img/products/stars.svg'
+import stars from '../../img/common/stars.svg'
 import ProductPrice from "./ProductPrice";
 
 const ProductCard = ({product, ...props}) => {
