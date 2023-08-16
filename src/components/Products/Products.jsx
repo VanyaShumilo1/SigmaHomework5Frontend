@@ -14,18 +14,9 @@ import {Context} from "../../context";
 
 const Products = () => {
 
-    const [products, setProducts] = useState([])
+
     const [showAllProducts, setShowAllProducts] = useState(false)
-
-    const [getProducts, isProductsLoading, productsError] = useFetching(async () => {
-        const response = await axios.get('/products')
-        setProducts(response.data)
-        return response
-    })
-
-    useEffect(() => {
-        getProducts()
-    }, [])
+    const {products, isProductsLoading} = useContext(Context)
 
     const productsWithDiscount = products.filter(product => product.discount === true)
     const productsWithoutDiscount = products.filter(product => product.discount !== true)
@@ -41,8 +32,6 @@ const Products = () => {
         setIsOverlayActive(true)
         setProductInOverlay(product)
     }
-
-    const {cartItems} = useContext(Context)
 
     return (
         <div className={styles.products}>

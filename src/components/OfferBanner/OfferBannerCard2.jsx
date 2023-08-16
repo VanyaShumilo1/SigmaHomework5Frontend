@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../../styles/offer.module.scss'
+import styles from '../../styles/OfferBanner.module.scss'
 import Subtitle from "../UI/Subtitle";
 import Title from "../UI/Title";
 
-const OfferCard2 = () => {
+const OfferBannerCard2 = () => {
     return (
         <div className={[styles.card, styles.card2].join(' ')}>
             <Subtitle className={'subtitle'}>Offer!!</Subtitle>
@@ -12,4 +12,4 @@ const OfferCard2 = () => {
     );
 };
 
-export default OfferCard2;
+export default OfferBannerCard2;
