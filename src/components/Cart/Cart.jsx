@@ -7,7 +7,8 @@ import Button from "../UI/Button";
 import buttonStyles from '../../styles/button.module.scss'
 import Input from "../UI/Input";
 import inputStyles from '../../styles/input.module.scss'
-import {Navigate} from "react-router-dom";
+import {Navigate, useNavigate} from "react-router-dom";
+import axios from "../../axios";
 
 const Cart = () => {
 
@@ -29,6 +30,7 @@ const Cart = () => {
 
     const [isFormActive, setIsFormActive] = useState(false)
 
+    const navigate = useNavigate()
     const handleShowForm = () => {
         setIsFormActive(true)
     }
@@ -45,11 +47,20 @@ const Cart = () => {
     const [phoneError, setPhoneError] = useState(false)
 
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-    const phoneRegex = /\d+/
-    const handleSubmit = (event) => {
+    const phoneRegex = /^[0-9]+$/
+    const handleSubmit = async (event) => {
         event.preventDefault()
-        if (name.length >= 3 && emailRegex.test(email) && phoneRegex.test(phone) && phoneRegex.length > 5 && address.length >= 3) {
-
+        if (name.length >= 3 && emailRegex.test(email) && phoneRegex.test(phone) && address.length >= 3) {
+            const response = await axios.post('/order', {
+                fullName: name,
+                email: email,
+                phone: phone,
+                address: address,
+                message: message,
+                products: cartItems
+            })
+            setCartItems([])
+            navigate('/')
         }
 
         if (name.length < 3) {
@@ -57,19 +68,16 @@ const Cart = () => {
         } else {
             setNameError(false)
         }
-
         if (!emailRegex.test(email)) {
             setEmailError(true)
         } else {
             setEmailError(false)
         }
-
         if (address.length < 3) {
             setAddressError(true)
         } else {
             setAddressError(false)
         }
-
         if (!phoneRegex.test(phone) || phoneRegex.length <= 5) {
             setPhoneError(true)
         } else {
@@ -114,12 +122,14 @@ const Cart = () => {
                         </div>
                         <div>
                             <label className={styles.cart__form_label} htmlFor="address">Address*</label>
-                            <Input className={[addressError && styles.error].join(' ')} type={'text'} id={'address'} value={address} setValue={setAddress}
+                            <Input className={[addressError && styles.error].join(' ')} type={'text'} id={'address'}
+                                   value={address} setValue={setAddress}
                                    placeholder={'Your Company Address'}/>
                         </div>
                         <div>
                             <label className={styles.cart__form_label} htmlFor="phone">Phone number*</label>
-                            <Input className={[phoneError && styles.error].join(' ')} type={'text'} id={'phone'} value={phone} setValue={setPhone}
+                            <Input className={[phoneError && styles.error].join(' ')} type={'text'} id={'phone'}
+                                   value={phone} setValue={setPhone}
                                    placeholder={'Enter Your Phone'}/>
                         </div>
                         <div className={styles.cart__form_textAreaWrapper}>

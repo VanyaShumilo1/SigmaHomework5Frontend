@@ -39,6 +39,10 @@
     margin-top: 105px;
     padding: 0 50px;
 
+    .error {
+      border-color: $red;
+    }
+
     &_wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -77,10 +81,6 @@
       }
     }
   }
-}
-
-.error {
-  border-color: $red;
 }
 
 .hide {
