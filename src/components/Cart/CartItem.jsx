@@ -25,6 +25,10 @@ const CartItem = ({item, ...props}) => {
         setCartItems(cartItemsClone)
     }
 
+    const handleRemoveItem = () => {
+        setCartItems(cartItems.filter(elem => elem.product._id !== item.product._id))
+    }
+
 
     return (
         <div {...props} className={styles.cartItem}>
@@ -41,7 +45,7 @@ const CartItem = ({item, ...props}) => {
             <div className={styles.cartItem__triggers}>
                 <Title className={styles.cartItem__triggers_text}>Quantity:</Title>
                 <NumberInput className={styles.cartItem__input} value={quantity} setValue={setQuantity} onChange={(e) => handleQuantity(e.target.value)}/>
-                <CloseButton className={styles.cartItem__closeButton}>X</CloseButton>
+                <CloseButton onClick={handleRemoveItem} className={styles.cartItem__closeButton}>X</CloseButton>
             </div>
         </div>
     );
