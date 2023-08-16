@@ -32,6 +32,10 @@
       font-weight: 700;
       transition: 0.3s all;
 
+      img {
+        object-fit: fill;
+      }
+
       &:hover {
         color: $green;
       }

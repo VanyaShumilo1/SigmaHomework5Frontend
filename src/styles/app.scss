@@ -49,8 +49,11 @@ a {
   font-family: inherit;
 }
 
+img {
+  object-fit: cover;
+}
+
 body {
   padding-bottom: 100px; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 
-@import 'title.module';

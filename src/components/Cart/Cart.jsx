@@ -60,7 +60,7 @@ const Cart = () => {
                 products: cartItems
             })
             setCartItems([])
-            navigate('/')
+            navigate('/successOrder')
         }
 
         if (name.length < 3) {

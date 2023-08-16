@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import {useState} from "react";
 import {Context} from "./context";
 import CartPage from "./pages/CartPage";
+import SuccessOrder from "./pages/SuccessOrder";
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/cart' element={<CartPage/>}/>
+                <Route path='/successOrder' element={<SuccessOrder/>}/>
             </Routes>
         </Context.Provider>
     );
