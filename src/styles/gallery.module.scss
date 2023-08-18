@@ -1,0 +1,35 @@
+@import 'variables';
+
+.gallery {
+  padding: 187px 0;
+  background: $galleryBg;
+  display: flex;
+  justify-content: space-between;
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 244px 148px;
+
+    &:nth-child(1) {
+      background: url(../img/gallery/image1.png);
+    }
+
+    &:nth-child(2) {
+      background: url(../img/gallery/image2.png);
+    }
+
+    &:nth-child(3) {
+      background: url(../img/gallery/image3.png);
+    }
+
+    &_text {
+      border-radius: 20px;
+      background: $white;
+      padding: 33px 83px;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}

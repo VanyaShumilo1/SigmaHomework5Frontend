@@ -2,7 +2,7 @@ import React from 'react';
 import Container from "../Container";
 import OfferBannerCard1 from "./OfferBannerCard1";
 import OfferBannerCard2 from "./OfferBannerCard2";
-import styles from '../../styles/OfferBanner.module.scss'
+import styles from '../../styles/offerBanner.module.scss'
 
 const OfferBanner = () => {
     return (

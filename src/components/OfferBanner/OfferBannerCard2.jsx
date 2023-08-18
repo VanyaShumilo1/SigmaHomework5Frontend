@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/OfferBanner.module.scss'
+import styles from '../../styles/offerBanner.module.scss'
 import Subtitle from "../UI/Subtitle";
 import Title from "../UI/Title";
 

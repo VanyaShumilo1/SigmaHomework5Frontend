@@ -5,7 +5,8 @@ import About from "../components/About/About";
 import Products from "../components/Products/Products";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Offer from "../components/Offer/Offer";
-import EcoFriendly from "../components/ecoFriendly/EcoFriendly";
+import EcoFriendly from "../components/EcoFriendly/EcoFriendly";
+import Gallery from "../components/Gallery/Gallery";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Testimonials/>
             <Offer/>
             <EcoFriendly/>
+            <Gallery/>
         </>
     );
 };
