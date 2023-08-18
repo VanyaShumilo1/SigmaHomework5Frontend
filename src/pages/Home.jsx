@@ -5,6 +5,7 @@ import About from "../components/About/About";
 import Products from "../components/Products/Products";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Offer from "../components/Offer/Offer";
+import EcoFriendly from "../components/ecoFriendly/EcoFriendly";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Products/>
             <Testimonials/>
             <Offer/>
+            <EcoFriendly/>
         </>
     );
 };

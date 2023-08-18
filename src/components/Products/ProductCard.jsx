@@ -9,7 +9,7 @@ const ProductCard = ({product, ...props}) => {
         <div {...props} className={styles.productCard}>
             <div className={styles.productCard__type}>{capitalize(product.type || 'none')}</div>
             <div className={styles.productCard__image}>
-                <img src={`http://localhost:5000/uploads/${product?.imageUrl}`} alt="product"/>
+                <img src={`http://localhost:1000/uploads/${product?.imageUrl}`} alt="product"/>
             </div>
             <h3 className={styles.productCard__title}>{product?.title}</h3>
             <div className={styles.productCard__line}></div>

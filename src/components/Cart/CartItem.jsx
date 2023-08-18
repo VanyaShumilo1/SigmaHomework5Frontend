@@ -34,7 +34,7 @@ const CartItem = ({item, ...props}) => {
         <div {...props} className={styles.cartItem}>
             <div className={styles.cartItem__content}>
                 <div className={styles.cartItem__image}>
-                    <img src={`http://localhost:5000/uploads/${item?.product?.imageUrl}`} alt="product"/>
+                    <img src={`http://localhost:1000/uploads/${item?.product?.imageUrl}`} alt="product"/>
                 </div>
                 <div className={styles.cartItem__info}>
                     <Title className={styles.cartItem__title}>{item?.product?.title}</Title>

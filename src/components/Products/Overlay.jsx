@@ -55,7 +55,7 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
 
                         <div className={styles.modal__img}>
                             <div className={styles.modal__type}>{capitalize(product?.type || "none")}</div>
-                            <img src={`http://localhost:5000/uploads/${product?.imageUrl}`} alt="product"/>
+                            <img src={`http://localhost:1000/uploads/${product?.imageUrl}`} alt="product"/>
                         </div>
                         <div className={styles.modal__content}>
                             <Title className={styles.modal__title}>{product?.title}</Title>
