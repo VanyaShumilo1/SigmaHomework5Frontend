@@ -1,0 +1,98 @@
+@import 'variables';
+
+.news {
+  margin-top: 177px;
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 700px;
+  }
+
+  &__cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+  }
+}
+
+
+.newsCard {
+  position: relative;
+  width: 100%;
+
+  &__date {
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    background: $white;
+    position: absolute;
+    top: 43px;
+    left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__day {
+    font-size: 25px;
+    color: $blue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+  }
+
+  &__month {
+    font-size: 20px;
+    color: $blue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+  }
+
+  &__bg {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $white;
+    width: 613px;
+    padding: 47px 57px;
+    border-radius: 30px;
+    box-shadow: 0 20px 35px 0 rgba(167, 167, 167, 0.25);
+  }
+
+  &__username {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 470px;
+    margin-top: 15px;
+    font-size: 25px;
+    color: $blue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+  }
+
+  &__text {
+    margin-top: 10px;
+    max-width: 444px;
+    line-height: 165%;
+  }
+
+  &__button {
+    margin-top: 15px;
+  }
+}

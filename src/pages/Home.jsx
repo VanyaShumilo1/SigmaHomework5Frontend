@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Offer from "../components/Offer/Offer";
 import EcoFriendly from "../components/EcoFriendly/EcoFriendly";
 import Gallery from "../components/Gallery/Gallery";
+import News from "../components/News/News";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Offer/>
             <EcoFriendly/>
             <Gallery/>
+            <News/>
         </>
     );
 };
