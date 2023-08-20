@@ -1,0 +1,10 @@
+.admin {
+  margin-top: 100px;
+
+  &__orders {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

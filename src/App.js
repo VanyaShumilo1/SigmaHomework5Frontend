@@ -8,6 +8,7 @@ import SuccessOrder from "./pages/SuccessOrder";
 import {useFetching} from "./hooks/useFetching";
 import axios from "./axios";
 import Footer from "./components/Footer/Footer";
+import Admin from "./pages/Admin";
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/cart' element={<CartPage/>}/>
+                <Route path='/admin' element={<Admin/>}/>
                 <Route path='/successOrder' element={<SuccessOrder/>}/>
             </Routes>
             <Footer/>
