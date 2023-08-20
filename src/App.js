@@ -7,6 +7,7 @@ import CartPage from "./pages/CartPage";
 import SuccessOrder from "./pages/SuccessOrder";
 import {useFetching} from "./hooks/useFetching";
 import axios from "./axios";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
 
@@ -39,6 +40,7 @@ const App = () => {
                 <Route path='/cart' element={<CartPage/>}/>
                 <Route path='/successOrder' element={<SuccessOrder/>}/>
             </Routes>
+            <Footer/>
         </Context.Provider>
     );
 }
