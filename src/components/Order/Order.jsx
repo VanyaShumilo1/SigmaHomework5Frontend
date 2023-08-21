@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from '../../styles/order.module.scss'
 import OrderProduct from "./OrderProduct";
+import Button from "../UI/Button";
+import axios from "../../axios";
 
-
-const Order = ({order, index, ...props}) => {
+const Order = ({order, index, getOrders, ...props}) => {
 
     const totalCost = order.products.reduce((prev, cur) => {
         if (cur.product.discount) {
@@ -11,6 +12,17 @@ const Order = ({order, index, ...props}) => {
         }
         return prev + cur.product.originalPrice * cur.quantity
     }, 0)
+
+    console.log(order)
+    const handleDelete = async () => {
+        try {
+            const deletedOrder = await axios.delete(`/order/${order._id}`)
+            getOrders()
+        } catch (err) {
+            console.log(err)
+        }
+
+    }
 
     return (
         <div className={styles.order}>
@@ -36,6 +48,7 @@ const Order = ({order, index, ...props}) => {
             <div className={styles.order__price}>
                 Total: {totalCost}$
             </div>
+            <Button onClick={handleDelete} className={styles.order__deleteButton}>Delete</Button>
         </div>
     );
 };

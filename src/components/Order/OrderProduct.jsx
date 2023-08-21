@@ -2,7 +2,6 @@ import React from 'react';
 import styles from '../../styles/order.module.scss'
 
 const OrderProduct = ({item, ...props}) => {
-    console.log(item)
     return (
         <div className={styles.orderProduct}>
             <div>

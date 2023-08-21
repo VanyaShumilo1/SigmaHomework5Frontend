@@ -26,7 +26,7 @@ const Admin = () => {
 
             <div className={styles.admin__orders}>
                 {
-                    !isOrdersLoading && orders.map((order, index)=> <Order key={order._id} order={order} index={index}/>)
+                    !isOrdersLoading && orders.map((order, index)=> <Order key={order._id} order={order} getOrders={getOrders} index={index}/>)
                 }
             </div>
 

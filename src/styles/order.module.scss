@@ -33,6 +33,18 @@
     margin-top: 30px;
     font-size: 20px;
   }
+
+  &__deleteButton {
+    margin-top: 15px;
+    background: none;
+    border: 2px solid $lightRed;
+    color: $lightRed;
+    padding: 15px 30px;
+
+    img {
+      display: none;
+    }
+  }
 }
 
 .orderProduct {
