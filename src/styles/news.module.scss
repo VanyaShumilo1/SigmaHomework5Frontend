@@ -27,6 +27,7 @@
 
     @media screen and (max-width: 1560px) {
       flex-wrap: wrap;
+      justify-content: center;
       gap: 140px;
     }
 
@@ -39,7 +40,7 @@
 
 .newsCard {
   position: relative;
-  width: 100%;
+  max-width: 100%;
 
   &__date {
     width: 82px;
