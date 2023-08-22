@@ -19,6 +19,10 @@ const Admin = () => {
         getOrders()
     }, []);
 
+    if(ordersError) {
+        console.log(ordersError)
+    }
+
 
     return (
         <Container className={styles.admin}>
