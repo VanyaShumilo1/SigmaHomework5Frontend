@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../../styles/cartHeader.module.scss'
-import Container from "../Container";
-import Title from "../UI/Title";
+import styles from './cartHeader.module.scss'
+import Container from "../Container/Container";
+import Title from "../UI/Title/Title";
 
 const CartHeader = () => {
     return (

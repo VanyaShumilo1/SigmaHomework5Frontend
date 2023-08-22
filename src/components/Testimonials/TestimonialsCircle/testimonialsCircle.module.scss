@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+
+.testimonialsCircle {
+  height: 211px;
+  width: 211px;
+  border-radius: 100%;
+  border: 3px solid $green;
+  padding: 5px;
+  background: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__subtitle {
+    font-size: 18px;
+  }
+}

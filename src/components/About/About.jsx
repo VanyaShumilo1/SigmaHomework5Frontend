@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from '../../styles/about.module.scss'
-import Container from "../Container";
-import Button from "../UI/Button";
+import styles from './about.module.scss'
+import Container from "../Container/Container";
+import Button from "../UI/Button/Button";
 import AboutIcon from "./AboutIcon";
 import OrganicIcon from '../../img/about/organic.svg'
 import QualityIcon from '../../img/about/quality.svg'
-import Subtitle from "../UI/Subtitle";
-import Title from "../UI/Title";
+import Subtitle from "../UI/Subtitle/Subtitle";
+import Title from "../UI/Title/Title";
 
 const About = () => {
     return (

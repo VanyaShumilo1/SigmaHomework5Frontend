@@ -1,9 +1,9 @@
 import React from 'react';
 import image from '../../img/ecoFriendly/image.png'
-import styles from '../../styles/ecoFriendly.module.scss'
-import Title from "../UI/Title";
-import Subtitle from "../UI/Subtitle";
-import EcoFriendlyTopic from "./EcoFriendlyTopic";
+import styles from './ecoFriendly.module.scss'
+import Title from "../UI/Title/Title";
+import Subtitle from "../UI/Subtitle/Subtitle";
+import EcoFriendlyTopic from "./EcoFriendlyTopic/EcoFriendlyTopic";
 
 const EcoFriendly = () => {
     return (

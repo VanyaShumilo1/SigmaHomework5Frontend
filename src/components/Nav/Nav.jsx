@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from "../Container";
-import styles from '../../styles/nav.module.scss'
+import Container from "../Container/Container";
+import styles from './nav.module.scss'
 import {Link, NavLink } from "react-router-dom";
 import logo from '../../img/common/logo.svg'
-import Search from "../Search";
-import CartInHeader from "../CartInHeader";
+import Search from "../UI/Search/Search";
+import CartInHeader from "../Header/CartInHeader/CartInHeader";
 import downArrow from '../../img/common/downarrow.svg'
 
 const Nav = () => {

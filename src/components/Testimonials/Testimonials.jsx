@@ -1,12 +1,12 @@
 import React from 'react';
-import Subtitle from "../UI/Subtitle";
-import Container from "../Container";
-import Title from "../UI/Title";
+import Subtitle from "../UI/Subtitle/Subtitle";
+import Container from "../Container/Container";
+import Title from "../UI/Title/Title";
 import avatar from '../../img/testimonials/person.png'
 import dots from '../../img/testimonials/dots.svg'
 import stars from '../../img/common/stars.svg'
-import styles from '../../styles/testimonials.module.scss'
-import TestimonialsCircle from "./TestimonialsCircle";
+import styles from './testimonials.module.scss'
+import TestimonialsCircle from "./TestimonialsCircle/TestimonialsCircle";
 
 const Testimonials = () => {
     return (

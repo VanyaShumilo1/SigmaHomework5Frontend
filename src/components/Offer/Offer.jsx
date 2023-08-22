@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
-import Subtitle from "../UI/Subtitle";
-import Title from "../UI/Title";
+import Subtitle from "../UI/Subtitle/Subtitle";
+import Title from "../UI/Title/Title";
 import {Context} from "../../context";
-import ProductCard from "../Products/ProductCard";
-import Container from "../Container";
-import styles from '../../styles/offer.module.scss'
-import GridLayout from "../GridLayout";
+import ProductCard from "../Products/ProductCard/ProductCard";
+import Container from "../Container/Container";
+import styles from './offer.module.scss'
+import GridLayout from "../GridLayout/GridLayout";
 
 const Offer = () => {
 

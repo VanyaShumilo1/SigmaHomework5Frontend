@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../../styles/gallery.module.scss'
-import Title from "../UI/Title";
+import styles from './gallery.module.scss'
+import Title from "../UI/Title/Title";
 
 const Gallery = () => {
     return (

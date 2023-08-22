@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../../styles/offerBanner.module.scss'
-import Subtitle from "../UI/Subtitle";
-import Title from "../UI/Title";
+import styles from './offerBanner.module.scss'
+import Subtitle from "../UI/Subtitle/Subtitle";
+import Title from "../UI/Title/Title";
 
 const OfferBannerCard2 = () => {
     return (

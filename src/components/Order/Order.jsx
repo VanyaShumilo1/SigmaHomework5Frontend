@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../../styles/order.module.scss'
-import OrderProduct from "./OrderProduct";
-import Button from "../UI/Button";
+import styles from './order.module.scss'
+import OrderProduct from "./OrderProduct/OrderProduct";
+import Button from "../UI/Button/Button";
 import axios from "../../axios";
 
 const Order = ({order, index, getOrders, ...props}) => {
@@ -13,7 +13,6 @@ const Order = ({order, index, getOrders, ...props}) => {
         return prev + cur.product.originalPrice * cur.quantity
     }, 0)
 
-    console.log(order)
     const handleDelete = async () => {
         try {
             const deletedOrder = await axios.delete(`/order/${order._id}`)

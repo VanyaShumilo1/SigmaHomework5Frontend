@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.OfferBanner {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 1650px){
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.card {
+  padding: 115px 0 115px 50px;
+  width: 682px;
+  border-radius: 20px;
+
+  @media screen and (max-width: 800px){
+    width: 500px;
+  }
+
+  @media screen and (max-width: 570px){
+    width: 300px;
+    padding-top: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+.card1 {
+  h3 {
+    color: $white;
+  }
+  background: url(../../img/offer/card1.png) center center/cover no-repeat;
+}
+
+.card2 {
+  background: url(../../img/offer/card2.png) center center/cover no-repeat;
+}

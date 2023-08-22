@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../styles/page404.module.scss'
-import Container from "../components/Container";
-import Title from "../components/UI/Title";
-import Button from "../components/UI/Button";
-import buttonStyles from '../styles/button.module.scss'
+import Container from "../components/Container/Container";
+import Title from "../components/UI/Title/Title";
+import Button from "../components/UI/Button/Button";
+import buttonStyles from '../components/UI/Button/button.module.scss'
 import big404img from '../img/page404/404.svg'
 import {useNavigate} from "react-router-dom";
 

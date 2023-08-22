@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.cartInHeader {
+  padding: 5px 15px 5px 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 33px;
+  border: 1px solid #E0E0E0;
+  gap: 12px;
+  color: $blue;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+
+  &__img {
+    width: 56px;
+    height: 56px;
+    background: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+}

@@ -1,15 +1,15 @@
 import React, {useContext, useEffect, useRef, useState} from 'react';
-import Subtitle from "../UI/Subtitle";
-import Title from "../UI/Title";
-import styles from '../../styles/products.module.scss'
-import buttonStyles from '../../styles/button.module.scss'
-import ProductCard from "./ProductCard";
-import Container from "../Container";
-import Loader from "../UI/Loader";
-import Button from "../UI/Button";
-import Overlay from "./Overlay";
+import Subtitle from "../UI/Subtitle/Subtitle";
+import Title from "../UI/Title/Title";
+import styles from './products.module.scss'
+import buttonStyles from '../UI/Button/button.module.scss'
+import ProductCard from "./ProductCard/ProductCard";
+import Container from "../Container/Container";
+import Loader from "../UI/Loader/Loader";
+import Button from "../UI/Button/Button";
+import Overlay from "./Overlay/Overlay";
 import {Context} from "../../context";
-import GridLayout from "../GridLayout";
+import GridLayout from "../GridLayout/GridLayout";
 
 const Products = () => {
 

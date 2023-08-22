@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from "../components/UI/Title";
+import Title from "../components/UI/Title/Title";
 import image from '../img/successOrder/img.png'
 import styles from '../styles/successOrder.module.scss'
 

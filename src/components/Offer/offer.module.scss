@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.offer {
+  padding: 200px 0;
+  background: $blue;
+
+  &__title {
+    margin-top: 8px;
+    color: $white;
+  }
+
+  &__cards {
+    margin-top: 50px;
+  }
+}

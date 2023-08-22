@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.newsletter {
+  margin-top: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../../img/newsletter/bg.png) center/cover no-repeat;
+  padding: 105px 70px;
+  border-radius: 30px;
+
+  @media screen and (max-width: 1210px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__title {
+    max-width: 360px;
+    color: $white;
+  }
+
+  &__form {
+    display: flex;
+    gap: 5px;
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+
+  &__input {
+    width: 350px;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+    img {
+      display: none;
+    }
+    @media screen and (max-width: 680px) {
+     display: inline;
+    }
+  }
+}

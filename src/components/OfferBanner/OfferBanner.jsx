@@ -1,8 +1,8 @@
 import React from 'react';
-import Container from "../Container";
+import Container from "../Container/Container";
 import OfferBannerCard1 from "./OfferBannerCard1";
 import OfferBannerCard2 from "./OfferBannerCard2";
-import styles from '../../styles/offerBanner.module.scss'
+import styles from './offerBanner.module.scss'
 
 const OfferBanner = () => {
     return (

@@ -1,12 +1,12 @@
 import React, {useContext, useState} from 'react';
-import styles from '../../styles/cart.module.scss'
-import Container from "../Container";
+import styles from './cart.module.scss'
+import Container from "../Container/Container";
 import {Context} from "../../context";
-import CartItem from "./CartItem";
-import Button from "../UI/Button";
-import buttonStyles from '../../styles/button.module.scss'
-import Input from "../UI/Input";
-import inputStyles from '../../styles/input.module.scss'
+import CartItem from "./CartItem/CartItem";
+import Button from "../UI/Button/Button";
+import buttonStyles from '../UI/Button/button.module.scss'
+import Input from "../UI/Input/Input";
+import inputStyles from '../UI/Input/input.module.scss'
 import {Navigate, useNavigate} from "react-router-dom";
 import axios from "../../axios";
 

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import styles from '../../styles/newsletter.module.scss'
-import Title from "../UI/Title";
-import Input from "../UI/Input";
-import Button from "../UI/Button";
-import buttonStyles from '../../styles/button.module.scss'
-import Container from "../Container";
+import styles from './newsletter.module.scss'
+import Title from "../UI/Title/Title";
+import Input from "../UI/Input/Input";
+import Button from "../UI/Button/Button";
+import buttonStyles from '../UI/Button/button.module.scss'
+import Container from "../Container/Container";
 import {useNavigate} from "react-router-dom";
 
 const Newsletter = () => {

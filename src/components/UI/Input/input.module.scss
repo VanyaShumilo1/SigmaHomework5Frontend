@@ -1,0 +1,8 @@
+@import "../../../styles/variables";
+
+.input {
+  padding: 28px 23px;
+  border-radius: 16px;
+  border: 1px solid $borderInputColor;
+  background: $white;
+}

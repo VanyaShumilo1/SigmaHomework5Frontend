@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {useFetching} from "../hooks/useFetching";
 import axios from "../axios";
-import Container from "../components/Container";
+import Container from "../components/Container/Container";
 import Order from "../components/Order/Order";
 import styles from '../styles/admin.module.scss'
-import Title from "../components/UI/Title";
+import Title from "../components/UI/Title/Title";
 
 const Admin = () => {
 
