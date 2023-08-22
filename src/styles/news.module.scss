@@ -7,6 +7,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
   }
 
   &__title {
@@ -18,6 +24,15 @@
     display: flex;
     justify-content: space-between;
     gap: 45px;
+
+    @media screen and (max-width: 1560px) {
+      flex-wrap: wrap;
+      gap: 140px;
+    }
+
+    @media screen and (max-width: 580px) {
+      gap: 250px;
+    }
   }
 }
 
@@ -38,6 +53,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+
+    @media screen and (max-width: 320px) {
+      top: 10px;
+      left: 10px;
+    }
   }
 
   &__day {
@@ -69,6 +90,18 @@
     padding: 47px 57px;
     border-radius: 30px;
     box-shadow: 0 20px 35px 0 rgba(167, 167, 167, 0.25);
+
+    @media screen and (max-width: 786px) {
+      max-width: 90%;
+    }
+
+    @media screen and (max-width: 580px) {
+      bottom: -200px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 20px 25px;
+    }
   }
 
   &__username {
@@ -84,15 +117,27 @@
     color: $blue;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
+
+    @media screen and (max-width: 420px) {
+      font-size: 18px;
+    }
   }
 
   &__text {
     margin-top: 10px;
     max-width: 444px;
     line-height: 165%;
+
+    @media screen and (max-width: 420px) {
+      font-size: 14px;
+    }
   }
 
   &__button {
     margin-top: 15px;
+
+    @media screen and (max-width: 500px) {
+      padding: 14px 20px;
+    }
   }
 }

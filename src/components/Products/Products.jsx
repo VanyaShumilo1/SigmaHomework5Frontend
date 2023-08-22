@@ -1,20 +1,19 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import Subtitle from "../UI/Subtitle";
 import Title from "../UI/Title";
 import styles from '../../styles/products.module.scss'
 import buttonStyles from '../../styles/button.module.scss'
-import axios from '../../axios'
 import ProductCard from "./ProductCard";
 import Container from "../Container";
-import {useFetching} from "../../hooks/useFetching";
 import Loader from "../UI/Loader";
 import Button from "../UI/Button";
 import Overlay from "./Overlay";
 import {Context} from "../../context";
+import GridLayout from "../GridLayout";
 
 const Products = () => {
 
-
+    const {productBlockId} = useContext(Context)
     const [showAllProducts, setShowAllProducts] = useState(false)
     const {products, isProductsLoading} = useContext(Context)
 
@@ -34,7 +33,7 @@ const Products = () => {
     }
 
     return (
-        <div className={styles.products}>
+        <div className={styles.products} id={productBlockId}>
 
             {
                 isOverlayActive && <Overlay isOverlayActive={isOverlayActive} setIsOverlayActive={setIsOverlayActive} product={productInOverlay}/>
@@ -43,7 +42,7 @@ const Products = () => {
             <Container>
                 <Subtitle className={styles.subtitle}>Categories</Subtitle>
                 <Title className={styles.title}>Our Products</Title>
-                <div className={styles.products__wrapper}>
+                <GridLayout className={styles.products__wrapper}>
                     {
                         isProductsLoading
                             ?
@@ -71,7 +70,7 @@ const Products = () => {
                                                  product={product}/>
                                 )
                     }
-                </div>
+                </GridLayout>
                 <Button
                     onClick={() => handleShowProducts()}
                     className={[styles.buttonShow, showAllProducts ? buttonStyles.button_black : buttonStyles.button_blue].join(' ')}>

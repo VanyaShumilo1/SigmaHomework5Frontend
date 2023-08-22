@@ -1,18 +1,40 @@
 @import 'variables';
 
 .cartItem {
+  position: relative;
+  background: $lightGreen;
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width: 1330px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1330px) {
+      flex-direction: column;
+    }
   }
 
   &__image {
     width: 252px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1330px) {
+      width: 100%;
+    }
+
   }
 
   &__info {
@@ -20,10 +42,17 @@
     align-items: flex-end;
     margin-left: 40px;
     gap: 10px;
+
+    @media screen and (max-width: 1330px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
   }
 
   &__title {
     font-size: 40px;
+    text-align: center;
   }
 
   &__price {
@@ -34,6 +63,16 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 1330px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
     &_text {
       font-size: 32px;
       margin-right: 20px;
@@ -43,5 +82,17 @@
   &__input {
     margin-right: 90px;
     background: $white;
+
+    @media screen and (max-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+
+  &__closeButton {
+    @media screen and (max-width: 1200px) {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
 }

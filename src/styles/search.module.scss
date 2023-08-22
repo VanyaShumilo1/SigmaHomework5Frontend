@@ -9,6 +9,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px 5px 5px 20px;
+  input {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 1410px){
+    width: 250px;
+  }
 
   &__button {
     display: flex;

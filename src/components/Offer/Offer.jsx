@@ -5,10 +5,11 @@ import {Context} from "../../context";
 import ProductCard from "../Products/ProductCard";
 import Container from "../Container";
 import styles from '../../styles/offer.module.scss'
+import GridLayout from "../GridLayout";
 
 const Offer = () => {
 
-    const {products} = useContext(Context)
+    const {products, productBlockId} = useContext(Context)
 
     return (
         <div className={styles.offer}>
@@ -16,11 +17,11 @@ const Offer = () => {
                 <Subtitle>Offer</Subtitle>
                 <Title className={styles.offer__title}>We Offer Organic For You</Title>
 
-                <div className={styles.offer__cards}>
+                <GridLayout className={styles.offer__cards}>
                     {
-                        products.slice(0, 4).map(product => <ProductCard product={product}/>)
+                        products.slice(0, 4).map(product => <a key={product._id} href={`#${productBlockId}`}><ProductCard product={product}/></a>)
                     }
-                </div>
+                </GridLayout>
             </Container>
 
         </div>

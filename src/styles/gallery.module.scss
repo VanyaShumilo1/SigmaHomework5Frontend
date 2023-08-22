@@ -5,6 +5,17 @@
   background: $galleryBg;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media screen and (max-width: 1190px) {
+    padding: 100px 0;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 50px 0;
+  }
 
   &__card {
     display: flex;
@@ -12,16 +23,24 @@
     align-items: center;
     padding: 244px 148px;
 
+    @media screen and (max-width: 1865px) {
+      padding: 122px 74px;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding: 61px 37px;
+    }
+
     &:nth-child(1) {
-      background: url(../img/gallery/image1.png);
+      background: url(../img/gallery/image1.png) center center/cover no-repeat;
     }
 
     &:nth-child(2) {
-      background: url(../img/gallery/image2.png);
+      background: url(../img/gallery/image2.png) center center/cover no-repeat;
     }
 
     &:nth-child(3) {
-      background: url(../img/gallery/image3.png);
+      background: url(../img/gallery/image3.png) center center/cover no-repeat;
     }
 
     &_text {
@@ -30,6 +49,14 @@
       padding: 33px 83px;
       font-size: 25px;
       font-weight: 500;
+
+      @media screen and (max-width: 1865px) {
+        padding: 20px 42px;
+      }
+
+      @media screen and (max-width: 400px) {
+        padding: 10px 20px;
+      }
     }
   }
 }

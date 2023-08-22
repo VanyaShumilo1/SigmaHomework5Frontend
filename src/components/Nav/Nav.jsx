@@ -11,7 +11,7 @@ const Nav = () => {
     return (
         <Container>
             <nav className={styles.nav}>
-                <div className={styles.nav__wrapper}>
+                <div className={[styles.nav__wrapper, styles.nav__wrapper_left].join(' ')}>
                     <Link to={'/'}>
                         <img src={logo} alt={'logo'}/>
                     </Link>

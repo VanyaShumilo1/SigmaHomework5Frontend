@@ -5,5 +5,9 @@
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
   font-weight: 800;
+
+  @media screen and (max-width: 800px){
+    font-size: 35px;
+  }
 }
 

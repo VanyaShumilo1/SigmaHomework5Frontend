@@ -1,7 +1,7 @@
 import Nav from "./components/Nav/Nav";
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import {useEffect, useState} from "react";
+import {useEffect, useId, useState} from "react";
 import {Context} from "./context";
 import CartPage from "./pages/CartPage";
 import SuccessOrder from "./pages/SuccessOrder";
@@ -14,6 +14,7 @@ import Page404 from "./pages/Page404";
 const App = () => {
 
     const [cartItems, setCartItems] = useState([])
+    const productBlockId = useId()
 
     const [products, setProducts] = useState([])
     const [getProducts, isProductsLoading, productsError] = useFetching(async () => {
@@ -35,6 +36,7 @@ const App = () => {
             setProducts,
             isProductsLoading,
             productsError,
+            productBlockId
         }}>
             <Nav/>
             <Routes>
