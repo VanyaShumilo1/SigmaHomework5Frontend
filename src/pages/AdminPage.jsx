@@ -6,7 +6,7 @@ import Order from "../components/Order/Order";
 import styles from '../styles/admin.module.scss'
 import Title from "../components/UI/Title/Title";
 
-const Admin = () => {
+const AdminPage = () => {
 
     const [orders, setOrders] = useState([])
 
@@ -38,4 +38,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default AdminPage;

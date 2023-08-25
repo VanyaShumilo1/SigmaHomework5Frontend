@@ -11,6 +11,8 @@ const PageHeader = ({title, className, bg, ...props}) => {
 
     if(bg === 1) {
         background = backgroundsStyles.bg1
+    } else if (bg === 2) {
+        background = backgroundsStyles.bg2
     }
 
     return (

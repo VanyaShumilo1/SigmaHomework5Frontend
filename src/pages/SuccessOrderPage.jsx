@@ -3,7 +3,7 @@ import Title from "../components/UI/Title/Title";
 import image from '../img/successOrder/img.png'
 import styles from '../styles/successOrder.module.scss'
 
-const SuccessOrder = () => {
+const SuccessOrderPage = () => {
     return (
         <div className={styles.successOrder}>
             <Title className={styles.successOrder__title}>Thank you for your order</Title>
@@ -12,4 +12,4 @@ const SuccessOrder = () => {
     );
 };
 
-export default SuccessOrder;
+export default SuccessOrderPage;

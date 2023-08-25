@@ -1,16 +1,17 @@
 import Nav from "./components/Nav/Nav";
 import {Route, Routes} from "react-router-dom";
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import {useEffect, useId, useState} from "react";
 import {Context} from "./context";
 import CartPage from "./pages/CartPage";
-import SuccessOrder from "./pages/SuccessOrder";
+import SuccessOrderPage from "./pages/SuccessOrderPage";
 import {useFetching} from "./hooks/useFetching";
 import axios from "./axios";
 import Footer from "./components/Footer/Footer";
-import Admin from "./pages/Admin";
+import AdminPage from "./pages/AdminPage";
 import Page404 from "./pages/Page404";
-import Shop from "./pages/Shop";
+import ShopPage from "./pages/ShopPage";
+import AboutPage from "./pages/AboutPage";
 
 const App = () => {
 
@@ -41,11 +42,12 @@ const App = () => {
         }}>
             <Nav/>
             <Routes>
-                <Route path='/' element={<Home />}/>
+                <Route path='/' element={<HomePage />}/>
                 <Route path='/cart' element={<CartPage/>}/>
-                <Route path='/admin' element={<Admin/>}/>
-                <Route path='/successOrder' element={<SuccessOrder/>}/>
-                <Route path='/shop' element={<Shop/>}/>
+                <Route path='/admin' element={<AdminPage/>}/>
+                <Route path='/successOrder' element={<SuccessOrderPage/>}/>
+                <Route path='/shop' element={<ShopPage/>}/>
+                <Route path='/about' element={<AboutPage/>}/>
                 <Route path='/*' element={<Page404/>}/>
             </Routes>
             <Footer/>

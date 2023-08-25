@@ -10,7 +10,7 @@ import Gallery from "../components/Gallery/Gallery";
 import News from "../components/News/News";
 import Newsletter from "../components/Newsletter/Newsletter";
 
-const Home = () => {
+const HomePage = () => {
     return (
         <>
             <Header/>
@@ -27,4 +27,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomePage;
