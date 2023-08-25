@@ -10,6 +10,7 @@ import axios from "./axios";
 import Footer from "./components/Footer/Footer";
 import Admin from "./pages/Admin";
 import Page404 from "./pages/Page404";
+import Shop from "./pages/Shop";
 
 const App = () => {
 
@@ -44,6 +45,7 @@ const App = () => {
                 <Route path='/cart' element={<CartPage/>}/>
                 <Route path='/admin' element={<Admin/>}/>
                 <Route path='/successOrder' element={<SuccessOrder/>}/>
+                <Route path='/shop' element={<Shop/>}/>
                 <Route path='/*' element={<Page404/>}/>
             </Routes>
             <Footer/>

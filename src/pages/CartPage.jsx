@@ -1,11 +1,12 @@
 import React from 'react';
-import CartHeader from "../components/CartHeader/CartHeader";
 import Cart from "../components/Cart/Cart";
+import headerStyles from '../components/PageHeader/pageHeaderBackGrounds.module.scss'
+import PageHeader from "../components/PageHeader/PageHeader";
 
 const CartPage = () => {
     return (
         <>
-            <CartHeader/>
+            <PageHeader bg={1} title={'Cart'}/>
             <Cart/>
         </>
     );
