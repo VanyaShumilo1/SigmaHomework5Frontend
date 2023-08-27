@@ -15,7 +15,11 @@ const OrderProduct = ({item, ...props}) => {
                 {item.product.title}
             </div>
             <div>
-                {item.product.discount ? item.product.discountPrice : item.product.originalPrice}$
+                {
+                    item.product.discount
+                        ? Number(item.product.discountPrice) * Number(item.quantity)
+                        : Number(item.product.originalPrice) * Number(item.quantity)
+                }$
             </div>
 
         </div>

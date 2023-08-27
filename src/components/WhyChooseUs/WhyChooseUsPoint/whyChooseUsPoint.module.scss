@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+.whyChooseUsPoint {
+
+  &__header {
+    padding: 27px 29px;
+    background: $pointBg;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 340px;
+
+    @media screen and (max-width: 400px) {
+      width: 280px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__text {
+    margin-top: 10px;
+    padding-left: 60px;
+    max-width: 500px;
+  }
+}

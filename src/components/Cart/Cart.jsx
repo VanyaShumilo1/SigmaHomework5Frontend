@@ -110,33 +110,52 @@ const Cart = () => {
                     <div className={styles.cart__form_wrapper}>
                         <div>
                             <label className={styles.cart__form_label} htmlFor="name">Full name*</label>
-                            <Input className={[nameError && styles.error].join(' ')} type={'text'} id={'name'}
-                                   value={name} setValue={setName}
-                                   placeholder={'Your Email Address'}/>
+                            <Input className={[nameError && styles.error].join(' ')}
+                                   type={'text'}
+                                   id={'name'}
+                                   value={name}
+                                   onChange={(e) => setName(e.target.value)}
+                                   placeholder={'Your Email Address'}
+                            />
                         </div>
                         <div>
                             <label className={styles.cart__form_label} htmlFor="email">Your email*</label>
-                            <Input className={[emailError && styles.error].join(' ')} type={'email'} id={'email'}
-                                   value={email} setValue={setEmail}
-                                   placeholder={'example@yourmail.com'}/>
+                            <Input className={[emailError && styles.error].join(' ')}
+                                   type={'email'}
+                                   id={'email'}
+                                   value={email}
+                                   onChange={(e) => setEmail(e.target.value)}
+                                   placeholder={'example@yourmail.com'}
+                            />
                         </div>
                         <div>
                             <label className={styles.cart__form_label} htmlFor="address">Address*</label>
-                            <Input className={[addressError && styles.error].join(' ')} type={'text'} id={'address'}
-                                   value={address} setValue={setAddress}
-                                   placeholder={'Your Company Address'}/>
+                            <Input className={[addressError && styles.error].join(' ')}
+                                   type={'text'}
+                                   id={'address'}
+                                   value={address}
+                                   onChange={(e) => setAddress(e.target.value)}
+                                   placeholder={'Your Company Address'}
+                            />
                         </div>
                         <div>
                             <label className={styles.cart__form_label} htmlFor="phone">Phone number*</label>
-                            <Input className={[phoneError && styles.error].join(' ')} type={'text'} id={'phone'}
-                                   value={phone} setValue={setPhone}
-                                   placeholder={'Enter Your Phone'}/>
+                            <Input className={[phoneError && styles.error].join(' ')}
+                                   type={'text'}
+                                   id={'phone'}
+                                   value={phone}
+                                   onChange={(e) => setPhone(e.target.value)}
+                                   placeholder={'Enter Your Phone'}
+                            />
                         </div>
                         <div className={styles.cart__form_textAreaWrapper}>
                             <label className={styles.cart__form_label} htmlFor="message">Message</label>
-                            <textarea className={inputStyles.input} id="message" value={message}
+                            <textarea className={inputStyles.input}
+                                      id="message"
+                                      value={message}
                                       onChange={(e) => setMessage(e.target.value)}
-                                      placeholder={'Some Extra Information'}></textarea>
+                                      placeholder={'Some Extra Information'}>
+                            </textarea>
                         </div>
                     </div>
 

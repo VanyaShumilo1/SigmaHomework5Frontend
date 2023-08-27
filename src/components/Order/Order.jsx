@@ -41,7 +41,7 @@ const Order = ({order, index, getOrders, ...props}) => {
 
             <div className={styles.order__products}>
                 {
-                    order?.products.map((item, index) => <OrderProduct key={item.product._id} item={item}/>)
+                    order?.products.map((item) => <OrderProduct key={item.product._id} item={item}/>)
                 }
             </div>
             <div className={styles.order__price}>

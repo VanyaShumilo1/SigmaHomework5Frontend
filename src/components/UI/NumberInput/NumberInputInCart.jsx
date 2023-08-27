@@ -1,9 +1,9 @@
 import styles from './numberInput.module.scss'
 
-const NumberInput = ({value, setValue, className, ...props}) => {
+const NumberInput = ({className, ...props}) => {
 
     return (
-        <input className={[styles.numberInput, className].join(' ')} type="text" value={value} {...props} />
+        <input className={[styles.numberInput, className].join(' ')} type="text" {...props} />
     );
 };
 

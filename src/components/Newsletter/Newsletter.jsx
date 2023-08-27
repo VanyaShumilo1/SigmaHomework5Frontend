@@ -22,8 +22,12 @@ const Newsletter = () => {
         <Container className={styles.newsletter}>
             <Title className={styles.newsletter__title}>Subscribe to our Newsletter</Title>
             <form className={styles.newsletter__form}>
-                <Input className={styles.newsletter__input} type={'email'} placeholder={'Your Email Address'}
-                       value={email} setValue={setEmail}/>
+                <Input className={styles.newsletter__input}
+                       type={'email'}
+                       placeholder={'Your Email Address'}
+                       value={email}
+                       onChange={(e) => setEmail(e.target.value)}
+                />
                 <Button onClick={handleSubmit}
                         className={[buttonStyles.button_blue, styles.newsletter__button].join(' ')}>Subscribe</Button>
             </form>

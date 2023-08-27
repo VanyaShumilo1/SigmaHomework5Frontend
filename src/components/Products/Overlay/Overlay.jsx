@@ -50,8 +50,9 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
             <div className={styles.modal}>
                 <Container>
                     <div className={styles.modal__wrapper}>
-                        <CloseButton id='closeBtn' onClick={(event) => handleCloseOverlay(event)}
-                                className={styles.modal__closeBtn}>X
+                        <CloseButton id='closeBtn'
+                                     onClick={(event) => handleCloseOverlay(event)}
+                                     className={styles.modal__closeBtn}>X
                         </CloseButton>
 
                         <div className={styles.modal__img}>
@@ -69,8 +70,11 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
                             </div>
                             <div className={styles.modal__quantity}>
                                 <div className={styles.modal__quantity_text}>Quantity :</div>
-                                <NumberInput value={quantity} setValue={setQuantity}/>
-                                <Button disabled={isItemInCart} onClick={() => addToCart()}
+                                <NumberInput value={quantity}
+                                             onChange={(e) => setQuantity(e.target.value)}
+                                />
+                                <Button disabled={isItemInCart}
+                                        onClick={() => addToCart()}
                                         className={[buttonStyles.button_blue, isItemInCart && buttonStyles.button_itemInCart].join(' ')}>
                                     {
                                         isItemInCart

@@ -21,7 +21,6 @@ const CartItem = ({item, ...props}) => {
             }
             return currentItem
         })
-
         setCartItems(cartItemsClone)
     }
 
@@ -44,7 +43,10 @@ const CartItem = ({item, ...props}) => {
             </div>
             <div className={styles.cartItem__triggers}>
                 <Title className={styles.cartItem__triggers_text}>Quantity:</Title>
-                <NumberInput className={styles.cartItem__input} value={quantity} setValue={setQuantity} onChange={(e) => handleQuantity(e.target.value)}/>
+                <NumberInput className={styles.cartItem__input}
+                             value={quantity}
+                             onChange={(e) => handleQuantity(e.target.value)}
+                />
                 <CloseButton onClick={handleRemoveItem} className={styles.cartItem__closeButton}>X</CloseButton>
             </div>
         </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './input.module.scss'
 
-const Input = ({value, setValue, className, ...props}) => {
+const Input = ({className, ...props}) => {
 
     return (
-        <input className={[styles.input, className].join(' ')} value={value} onChange={(e) => setValue(e.target.value)} {...props}/>
+        <input className={[styles.input, className].join(' ')} {...props}/>
     );
 };
 
