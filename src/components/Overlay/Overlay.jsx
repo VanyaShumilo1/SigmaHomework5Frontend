@@ -64,9 +64,7 @@ const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
                             <img className={styles.modal__stars} src={stars} alt="rating"/>
                             <ProductPrice className={styles.modal__price} product={product}/>
                             <div className={styles.modal__text}>
-                                Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                                galley.
+                                {product?.description}
                             </div>
                             <div className={styles.modal__quantity}>
                                 <div className={styles.modal__quantity_text}>Quantity :</div>
