@@ -7,7 +7,7 @@ import ProductCard from "./ProductCard/ProductCard";
 import Container from "../Container/Container";
 import Loader from "../UI/Loader/Loader";
 import Button from "../UI/Button/Button";
-import Overlay from "./Overlay/Overlay";
+import Overlay from "../Overlay/Overlay";
 import {Context} from "../../context";
 import GridLayout from "../GridLayout/GridLayout";
 

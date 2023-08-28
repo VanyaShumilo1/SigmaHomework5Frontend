@@ -1,16 +1,16 @@
 import React, {useContext, useEffect, useState} from 'react';
 import styles from "./overlay.module.scss";
-import buttonStyles from '../../UI/Button/button.module.scss';
-import Container from "../../Container/Container";
-import {capitalize} from "../../../utils/capitalize";
-import Title from "../../UI/Title/Title";
-import stars from '../../../img/common/stars.svg'
-import ProductPrice from "../../UI/ProductPrice/ProductPrice";
-import NumberInput from "../../UI/NumberInput/NumberInput";
-import Button from "../../UI/Button/Button";
-import {Context} from "../../../context";
-import CloseButton from "../../UI/CloseButton/CloseButton";
-import backendUrl from "../../../utils/backendUrl";
+import buttonStyles from '../UI/Button/button.module.scss';
+import Container from "../Container/Container";
+import {capitalize} from "../../utils/capitalize";
+import Title from "../UI/Title/Title";
+import stars from '../../img/common/stars.svg'
+import ProductPrice from "../UI/ProductPrice/ProductPrice";
+import NumberInput from "../UI/NumberInput/NumberInput";
+import Button from "../UI/Button/Button";
+import {Context} from "../../context";
+import CloseButton from "../UI/CloseButton/CloseButton";
+import backendUrl from "../../utils/backendUrl";
 
 const Overlay = ({product, isOverlayActive, setIsOverlayActive, ...props}) => {
 

@@ -1,5 +1,6 @@
 .team {
   margin-top: 177px;
+  margin-bottom: 200px;
 
   &__center {
     text-align: center;
@@ -8,5 +9,14 @@
   &__text {
     margin: 16px auto 0 auto;
     max-width: 850px;
+  }
+
+  &__cards {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }

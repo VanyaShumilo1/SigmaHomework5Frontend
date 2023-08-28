@@ -3,6 +3,8 @@ import PageHeader from "../components/PageHeader/PageHeader";
 import CreativeThings from "../components/CreativeThings/CreativeThings";
 import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Team from "../components/Team/Team";
+import Offer from "../components/Offer/Offer";
+import Newsletter from "../components/Newsletter/Newsletter";
 
 const AboutPage = () => {
     return (
@@ -11,6 +13,8 @@ const AboutPage = () => {
             <CreativeThings/>
             <WhyChooseUs/>
             <Team/>
+            <Offer/>
+            <Newsletter/>
         </div>
     );
 };
